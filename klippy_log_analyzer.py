@@ -10,6 +10,7 @@ from PyQt5.QtGui import QFont
 import pyqtgraph as pg
 import numpy as np
 
+
 class LogParser(QThread):
     """Thread for parsing log file without blocking UI"""
     dataReady = pyqtSignal(dict)
@@ -126,6 +127,7 @@ class LogParser(QThread):
             }
 
         return None
+
 
 class KlippyLogAnalyzer(QMainWindow):
     def __init__(self):
@@ -381,6 +383,7 @@ class KlippyLogAnalyzer(QMainWindow):
         ticks = [list(zip(tick_positions, tick_labels))]
         axis.setTicks(ticks)
 
+
 def main():
     app = QApplication(sys.argv)
 
@@ -392,6 +395,7 @@ def main():
     analyzer.show()
 
     sys.exit(app.exec_())
+
 
 if __name__ == '__main__':
     main()
