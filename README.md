@@ -18,22 +18,13 @@ A powerful performance monitoring tool for Klipper 3D printers that analyzes kli
 
 2. **Alternative: Build from Source**
    ```bash
-   git clone https://github.com/yourusername/klippy-log-analyzer.git
-   cd klippy-log-analyzer
+   git clone https://github.com/FracktalWorks/KlipperLogAnalyzer.git
    pip install -r requirements.txt
    python klippy_analyzer.py
    ```
-   
-### Development Setup
-```bash
-git clone https://github.com/yourusername/klippy-log-analyzer.git
-cd klippy-log-analyzer
-pip install -r requirements.txt
-python klippy_analyzer.py
-```
 
 ### Building Executable
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --name "Klippy Log Analyzer" klippy_analyzer.py
+pyinstaller --onefile --windowed --name "Klippy Log Analyzer" klippy_log_analyzer.py
 ```
